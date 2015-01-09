@@ -1,40 +1,67 @@
+# An Introduction to OpenStack
+
+## SCALE 13, 2015
+
+## Rich Bowen - rbowen@redhat.com
+
+---
+
 ![openstack](images/openstack.png)
 
----
-
-## What is it - Simplest description
-
-* VM management
+note: A Foundation, and a software project.
 
 ---
 
-## More complicated description
+## OpenStack, the Software
 
-* Elasticity
-* On demand, self service
-* Measured
-* Network access
+OpenStack software controls large pools of compute, storage, and
+networking resources throughout a datacenter, managed through a
+dashboard or via the OpenStack API.
+
+---
+
+## OpenStack, the Foundation
+
+![foundation](images/foundation.png)
+
+note: Rackspace and NASA solving similar problems, deciding to pool their
+resources. Now, a coalition of over 350 companies working together to 
+develop the OpenStack software. 
 
 ---
 
 ![iaas](images/iaas.png)
 
+note: OpenStack fits into this iaas slot, and provides you a way to
+create your own self-service iaas for your "customers".
+
 ---
 
 ## Pets
+
+![pets](images/pets.jpg) 
 
 * Names like 'fluffy', 'spots', and 'fido'
 * When they get sick, you stay up all night recompiling their kernel
 * Each one is a unique snowflake
 
+<small>Photo CC julie corsi, Flickr</small>
+
+note: Pets vs Cattle metaphor provides an indication that you might need 
+something like this.
+
 ---
 
 ## Cattle
+
+![cattle](images/cattle.jpg)
 
 * Names like DC01M049.cloud.ibm.com
 * When they get sick you shoot it and spin up a new one
 * Each one is identical, or based off of a limited number of templates
 * Moo
+
+<small>Photo CC mgbjay, Flickr</small>
 
 ---
 
@@ -42,11 +69,59 @@
 
 ---
 
+## Automation
+
+* "Spin up a new one" generally means that it's done in some automated, reproducable manner
+* Automation is a key part of the cloud
+
+note: If not the definition, at least the concept
+
+---
+
 ![diagram](images/diagram1.png)
+
+note: Originally, this is what the OpenStack platform looked like
 
 ---
 
 ![layers](images/openstack_layers.png)
+
+note: It's evolved
+
+---
+
+## Projects
+
+* Bare metal (Ironic)
+* Block Storage (Cinder)
+* Common Libraries (Oslo)
+* Compute (Nova)
+* DNS Services (Designate)
+* Dashboard (Horizon)
+* Data processing service (Sahara)
+* Database Service (Trove)
+* Deployment (TripleO)
+* Documentation (No Clever Name)
+* Identity (Keystone)
+
+---
+
+* Image Service (Glance)
+* Infrastructure (Infra)
+* Key management service (Barbican)
+* Message service (Zaqar, formerly Marconi)
+* Networking (Neutron)
+* Object Storage (Swift)
+* Orchestration (Heat)
+* Quality Assurance (QA)
+* Release cycle management (Thierry)
+* Shared File Systems (Manila)
+* Telemetry (Ceilometer)
+
+---
+
+    This presentation doesn't cover all of the projects, so I'm most
+    assuredly missing something.
 
 ---
 
@@ -60,8 +135,21 @@
 
 ## Identity
 
+![Keystone](images/keystone.jpg)
+
 * 'Keystone'
-* Various PAM identity backends
+* Various identity backends, including LDAP
+* Pluggable
+
+---
+
+## Pluggable
+
+![Pluggable](images/plug.jpg)
+
+* Core design principle
+* Many of the projects are light wrappers around your favorite back-end
+  service (DNS, File storage, Identity, Database, etc.)
 
 ---
 
@@ -101,6 +189,8 @@
 
 ## Telemetry Service
 
+![Ceilometer](images/ceilometer.jpg)
+
 * 'Ceilometer'
 * Aggregates usage and performance data across the services deployed in an OpenStack cloud.
 * Reporting (billing)
@@ -109,6 +199,8 @@
 ---
 
 ## Orchestration Service
+
+![Heat](images/heat.jpg)
 
 * 'Heat'
 * Template-driven engine 
@@ -154,23 +246,11 @@
 ## Horizon
 
 * The "control panel"
+* Communicates with services via the API, since they could be anywhere
 
 ---
 
 ![horizon](images/horizon.png)
-
----
-
-## Other ...
-
-* Data processing (Sahara)
-* Bare metal (Ironic)
-* Queue service (Marconi)
-* Key management (Barbican)
-* DNS Services (Designate)
-* Common Libraries (Oslo)
-* Deployment (TripleO)
-* Devstack (DevStack)
 
 ---
 
@@ -188,6 +268,26 @@
 * 'All-in-one' - great for testing, impractical in the real world
 * Any service can share a machine with others, or run on one, or several machines
 * Typical is multiple compute nodes, multiple storage nodes, one "control" note containing Horizon, Neutron, Ceilometer, and so on
+
+---
+
+## Devstack
+
+        git clone https://git.openstack.org/openstack-dev/devstack
+        cd devstack
+        ./stack.sh
+
+---
+
+![devstack](images/devstack.png)
+
+---
+
+![devstack](images/devstack2.png)
+
+---
+
+![devstack](images/devstack3.png)
 
 ---
 
@@ -214,8 +314,6 @@
 * Crowbar (Dell)
 * Fuel (Mirantis)
 * Helion (HP)
-* Devstack (Upstream, for development)
-* TripleO (Still in infancy, perhaps core in Juno)
 
 ---
 
@@ -230,15 +328,10 @@
 
 ---
 
-## REF
+# FIN
 
-* http://openstack.org/
-* http://openstack.redhat.com/
-* http://stackalytics.com/
-* http://openstack.org/summit/
+* Rich Bowen
+* RBowen@RedHat.com
+* @rbowen
+* @RDOCommunity
 
----
-
-## Demo goes here
-
-* ...
