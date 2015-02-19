@@ -12,14 +12,6 @@ note: A Foundation, and a software project.
 
 ---
 
-## OpenStack, the Software
-
-OpenStack software controls large pools of compute, storage, and
-networking resources throughout a datacenter, managed through a
-dashboard or via the OpenStack API.
-
----
-
 ## OpenStack, the Foundation
 
 ![foundation](images/foundation.png)
@@ -27,6 +19,34 @@ dashboard or via the OpenStack API.
 note: Rackspace and NASA solving similar problems, deciding to pool their
 resources. Now, a coalition of over 350 companies working together to 
 develop the OpenStack software. 
+
+---
+
+* Vendor-neutral governance
+* Infrastructure support (especially for testing)
+* Community manager services
+* User Group and Meetup assistance
+* Events (OpenStack Summit)
+
+---
+
+## Project incubation
+
+* Ensures legal complience
+* Ensures community diversity and sustainability
+* Ensures technical complience and interoperability
+* Ensures adequate documentation and test suite
+
+note: In order to ensure that when you install OpenStack you only get
+quality, reliable, tested stuff
+
+---
+
+## OpenStack, the Software
+
+OpenStack software controls large pools of compute, storage, and
+networking resources throughout a datacenter, managed through a
+dashboard or via the OpenStack API.
 
 ---
 
@@ -226,6 +246,7 @@ note: It's evolved
 
 * Neutron
 * Manages SDN - Software Defined Networking
+* Replaces nova-networking
 
 ---
 
@@ -254,11 +275,69 @@ note: It's evolved
 
 ---
 
+## Horizon
+
+* Every OpenStack project must provide an API
+* The Horizon team turns that API into a web interface
+
+---
+
+## Glance
+![glance](images/glance.png)
+
+---
+
+## Marconi
+
+* Message queues
+* Handles much of the communication between components
+
+---
+
+## Sahara
+
+![Sahara](images/sahara.jpg)
+    The Sahara project provides a simple means to provision a
+    data-intensive application cluster (Hadoop or Spark) on top of
+    OpenStack. 
+
+---
+
+## Barbican
+
+![Barbican](images/barbican.jpg)
+    Barbican is a ReST API designed for the secure storage, provisioning
+    and management of secrets. It is aimed at being useful for all
+    environments, including large ephemeral Clouds. 
+
+---
+
+## Designate
+
+    Designate provides DNSaaS services for OpenStack:
+
+    * REST API for domain/record management
+    * Multi-tenant
+    * Integrated with Keystone for authentication
+    * Framework in place to integrate with Nova and Quantum notifications (for
+    * auto-generated records)
+    * Support for PowerDNS and Bind9 out of the box
+
+---
+
+## Manila
+
+![Manila](images/manila.jpg)
+    Shared filesystem service for OpenStack. Provides coordinated access
+    to shared or distributed file systems.
+
+---
+
 ## Deployment
 
-* Install/Deploy is a nightmare
+* Install/Deploy is complicated
 * Every install is different
-* There's no "best" way to do things
+* There's no single "best" way to do things
 * Lots of moving parts
 
 ---
@@ -299,6 +378,8 @@ note: It's evolved
         sudo yum install -y openstack-packstack
         packstack --allinone
 
+note: Day job
+
 ---
 
 ## RDO
@@ -315,16 +396,37 @@ note: It's evolved
 * Fuel (Mirantis)
 * Helion (HP)
 
+note: In no particular order
+
 ---
 
 ## Why so many?
 
-* This is the place where, for the moment, companies are competing
+* This is one place where, for the moment, companies are competing
 * Hopefully soon TripleO will be the defacto solution
 * Local variants (Debian vs RHEL, for example) will still exist, based
   on TripleO
 * We'll start competing on something else, like management
 * Speaking of which, http://manageiq.org/
+
+---
+
+## Support
+
+* Lots of companies
+* http://ask.openstack.org/
+
+---
+
+![ask](images/ask.openstack.png)
+
+note: StackOverflow-like community for OpenStack.
+
+---
+
+## Testing
+
+* TODO
 
 ---
 
@@ -334,4 +436,5 @@ note: It's evolved
 * RBowen@RedHat.com
 * @rbowen
 * @RDOCommunity
+* **boxofclue.com**/presentations/openstack
 
