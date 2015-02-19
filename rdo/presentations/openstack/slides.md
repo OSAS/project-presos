@@ -145,6 +145,16 @@ note: It's evolved
 
 ---
 
+## Recent developments
+
+* Last week, the requirements for an OpenStack project changed
+* OK to have competing projects
+* Not all tied to a single release cadence any more
+* Implications of this remain to develop
+* See Thierry's blog post
+
+---
+
 ## Shared services
 
 * Communicate via REST API amongst themselves
