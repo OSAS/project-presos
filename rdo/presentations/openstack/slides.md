@@ -18,7 +18,10 @@ note: A Foundation, and a software project.
 
 note: Rackspace and NASA solving similar problems, deciding to pool their
 resources. Now, a coalition of over 350 companies working together to 
-develop the OpenStack software. 
+develop the OpenStack software.
+
+Origins: NASA trying to upload multi-terabyte photos for data
+processing. Rackspace trying to manage thousands of VMs.
 
 ---
 
@@ -47,6 +50,18 @@ quality, reliable, tested stuff
 OpenStack software controls large pools of compute, storage, and
 networking resources throughout a datacenter, managed through a
 dashboard or via the OpenStack API.
+
+---
+
+## Definition of Cloud
+
+* On-demand, self service
+* Broad network access
+* Resource pooling
+* Rapid elasticity
+* Measured service
+
+`http://csrc.nist.gov/publications/nistpubs/800-145/SP800-145.pdf`
 
 ---
 
