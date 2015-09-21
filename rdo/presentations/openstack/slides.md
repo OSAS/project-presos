@@ -1,6 +1,6 @@
 # An Introduction to OpenStack
 
-## SCALE 13, 2015
+## LiuxCon Dublin, 2015
 
 ## Rich Bowen - rbowen@redhat.com
 
@@ -33,23 +33,28 @@ processing. Rackspace trying to manage thousands of VMs.
 
 ---
 
-## Project incubation
-
-* Ensures legal complience
-* Ensures community diversity and sustainability
-* Ensures technical complience and interoperability
-* Ensures adequate documentation and test suite
-
-note: In order to ensure that when you install OpenStack you only get
-quality, reliable, tested stuff
-
----
-
 ## OpenStack, the Software
 
 OpenStack software controls large pools of compute, storage, and
 networking resources throughout a datacenter, managed through a
 dashboard or via the OpenStack API.
+
+---
+
+## OpenStack Mission Statement
+
+> To produce the ubiquitous Open Source Cloud Computing platform that will meet the needs of public and private clouds regardless of size, by being simple to implement and massively scalable.
+
+---
+
+## The Big Tent
+
+Projects that are aligned with the OpenStack mission, which are concerned
+with interoperability with other OpenStack projects, and which are
+willing to submit to the authority of the Technical Committee (TC), are
+part of the so-called "Big Tent" of projects that are part of OpenStack.
+
+(More on this later)
 
 ---
 
@@ -104,12 +109,26 @@ something like this.
 
 ---
 
+## Not necessarily exclusive - you probably have both
+
+![cowdog](images/cowdog.jpg)
+
+---
+
 ## Automation
 
 * "Spin up a new one" generally means that it's done in some automated, reproducable manner
 * Automation is a key part of the cloud
 
-note: If not the definition, at least the concept
+Note: If not the definition, at least the concept
+
+Heat - see later ...
+
+---
+
+![launch](images/launch.png)
+
+Note: Or ...
 
 ---
 
@@ -149,7 +168,7 @@ note: It's evolved
 * Object Storage (Swift)
 * Orchestration (Heat)
 * Quality Assurance (QA)
-* Release cycle management (Thierry)
+* Release cycle management 
 * Shared File Systems (Manila)
 * Telemetry (Ceilometer)
 
@@ -157,16 +176,6 @@ note: It's evolved
 
     This presentation doesn't cover all of the projects, so I'm most
     assuredly missing something.
-
----
-
-## Recent developments
-
-* Last week, the requirements for an OpenStack project changed
-* OK to have competing projects
-* Not all tied to a single release cadence any more
-* Implications of this remain to develop
-* See Thierry's blog post
 
 ---
 
@@ -271,7 +280,16 @@ note: It's evolved
 
 * Neutron
 * Manages SDN - Software Defined Networking
-* Replaces nova-networking
+
+---
+
+![Neutron](images/neutron.png)
+
+---
+
+## Security
+
+![security](images/firewall.png)
 
 ---
 
@@ -312,7 +330,7 @@ note: It's evolved
 
 ---
 
-## Marconi
+## Zaqar
 
 * Message queues
 * Handles much of the communication between components
@@ -339,22 +357,22 @@ note: It's evolved
 
 ## Designate
 
-    Designate provides DNSaaS services for OpenStack:
+Designate provides DNSaaS services for OpenStack:
 
-    * REST API for domain/record management
-    * Multi-tenant
-    * Integrated with Keystone for authentication
-    * Framework in place to integrate with Nova and Quantum notifications (for
-    * auto-generated records)
-    * Support for PowerDNS and Bind9 out of the box
+* REST API for domain/record management
+* Multi-tenant
+* Integrated with Keystone for authentication
+* Framework in place to integrate with Nova and Neutron notifications (for auto-generated records)
+* Support for PowerDNS and Bind9 out of the box
 
 ---
 
 ## Manila
 
 ![Manila](images/manila.jpg)
-    Shared filesystem service for OpenStack. Provides coordinated access
-    to shared or distributed file systems.
+
+note: Shared filesystem service for OpenStack. Provides coordinated access
+to shared or distributed file systems.
 
 ---
 
@@ -420,6 +438,7 @@ note: Day job
 * Crowbar (Dell)
 * Fuel (Mirantis)
 * Helion (HP)
+* RDO-Manager
 
 note: In no particular order
 
@@ -451,7 +470,38 @@ note: StackOverflow-like community for OpenStack.
 
 ## Testing
 
-* TODO
+* Tempest: The test suite
+* Zuul - The upstream testing infrastructure
+
+    http://status.openstack.org/zuul/
+
+---
+
+![zuul](images/zuul.png)
+
+---
+
+![zuul](images/zuul2.png)
+
+---
+
+## OpenStack Summit
+
+Tokyo, Japan, October 27-30
+
+http://openstack.org/summit
+
+![summit](images/summit.png)
+
+(Next year in Austin, Texas)
+
+---
+
+## Try it out
+
+http://trystack.org/
+
+https://www.youtube.com/watch?v=lj5D94XHb6g
 
 ---
 

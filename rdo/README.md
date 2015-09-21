@@ -1,6 +1,6 @@
 RDO
 ====
 
-RDO: http://openstack.redhat.com/
+RDO: http://rdoproject.org/
 
 
