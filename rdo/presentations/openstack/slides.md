@@ -179,6 +179,141 @@ note: It's evolved
 
 ---
 
+## Big Tent
+
+* In the past - the Incubator
+* This definition was too small
+* This definition was too big
+
+Note:
+
+The Incubator ensures that projects are good enough to be called
+OpenStack.
+
+Too small: Excludes some of the projects that are in fact part of the
+ecosystem, but aren't core, or compatible with everything.
+
+Too big: Still too much stuff for any actual real person to deploy all
+of it
+
+* Too small to express the diversity of interesting problems people are
+  solving in the cloud computing space
+* Too big for any one person ever to install the whole thing. Also,
+  totally overwhelming to beginners
+
+---
+
+## Big Tent
+
+* Does your project work towards the OpenStack Mission?
+
+> The OpenStack Mission: to produce the ubiquitous Open Source Cloud Computing platform that will meet the needs of public and private clouds regardless of size, by being simple to implement and massively scalable.
+
+---
+
+## Big Tent
+
+* Does your project follow the OpenStack Way?
+    * Open Source (Licensing)
+    * Open Community (Leadership chosen by the contributors)
+    * Open Development (Public review)
+    * Open Design (Discussion of direction at design summit or other public
+      archived forums)
+
+<small>https://wiki.openstack.org/wiki/Open</small>
+
+---
+
+## Open
+
+* The community controls the design process. You can help make this software meet your needs.
+
+Note: Collaborative development, collaborative design. Open, *public*
+design sessions.
+
+---
+
+## Open
+
+* The technical governance of the project is a community meritocracy with contributors electing technical leads and members of the Technical Committee.
+
+Note: Yes, meritocracy is a dirty word to some people. 
+
+---
+
+## Open
+
+* This will always be truly free software. We will never purposefully limit the functionality or scalability of the software to try and sell you an "enterprise" version
+
+Note: Not Open Core or free-ish, or Freemium
+
+---
+
+## Open
+
+* All project meetings are held in public IRC channels and recorded.
+
+![recorded](images/reel.jpg)
+
+Note: No secret cabals. No decisions inside companies that are then
+dumped on the community. No "openwashing" of internal projects.
+
+Also, makes it much easier for people in other time zones, languages,
+etc, to keep up with what's happening.
+
+---
+
+## Interoperability
+
+* Must be interoperable with other things that are OpenStack
+* At a minumum, needs to have an API that Horizon can use, and use
+  Keystone for authentication.
+
+![gears](images/gears.jpg)
+
+---
+
+## Submit to the TC
+
+* Must be willing to submit to the rulings of the Technical Committee
+
+---
+
+## Tags
+
+* Help to navigate OpenStack projects
+* Includes everyone, but gives guidance to downstream users
+* Must answer a question that is useful to the consumer, rather than one single overarching question "is it in the release?"
+* So we no longer need an integrated release
+
+---
+
+## Tags
+
+* Tags answer a question:
+    * When do I expect updates?
+    * How long do I have support for a particular release?
+    * Where do I start? (What's the base kit?)
+    * What is the project's longevity?
+    * Will stuff break when I upgrade?
+    * Project diversity?
+    * How good is the documentation?
+
+Note:
+
+Diversity: Is this run by a single vendor that might change their mind
+tomorrow?
+
+Can then cut a release based on a particular answer or set of answers.
+
+---
+
+## So ... what's in the tent?
+
+![BigTent](images/bigtent.jpg)
+
+---
+
 ## Shared services
 
 * Communicate via REST API amongst themselves
@@ -226,6 +361,11 @@ note: It's evolved
 * Administrators can create base templates from which their users can start new compute instances
 * Users can choose from available images, or create their own from existing servers
 * Snapshots can also be stored in the Image Service so that virtual machines can be backed up quickly
+
+---
+
+## Glance
+![glance](images/glance.png)
 
 ---
 
@@ -325,15 +465,16 @@ note: It's evolved
 
 ---
 
-## Glance
-![glance](images/glance.png)
-
----
-
 ## Zaqar
 
-* Message queues
-* Handles much of the communication between components
+* Messaging service
+* Pluggable backend
+
+Note:
+
+In Mesopotamian mythology, Zaqar or Dzakar is the messenger of the god
+Sin. He relays these messages to mortals through his power over their
+dreams and nightmares.
 
 ---
 
@@ -446,6 +587,7 @@ note: In no particular order
 
 ## Why so many?
 
+* Deployment is *hard*
 * This is one place where, for the moment, companies are competing
 * Hopefully soon TripleO will be the defacto solution
 * Local variants (Debian vs RHEL, for example) will still exist, based
