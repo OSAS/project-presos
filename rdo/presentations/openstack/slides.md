@@ -1,6 +1,6 @@
 # An Introduction to OpenStack
 
-## LiuxCon Dublin, 2015
+## LinuxCon Dublin, 2015
 
 ## Rich Bowen - rbowen@redhat.com
 
