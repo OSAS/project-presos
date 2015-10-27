@@ -2,7 +2,7 @@
 
 An OpenStack Distribution
 
-http://openstack.redhat.com/
+http://rdoproject.org
 
 ---
 
@@ -16,19 +16,19 @@ http://openstack.redhat.com/
 
 ![RDO site](assets/website.png)
 
-http://openstack.redhat.com/
+http://rdoproject.org
 
 ---
 
 ![Stats](assets/stats.png)
 
-http://openstack.redhat.com/stats/
+http://rdoproject.org/stats/
 
 ---
 
 ## Getting started
 
-http://openstack.redhat.com/Quickstart
+http://rdoproject.org/Quickstart
 
     # yum install -y http://rdo.fedorapeople.org/rdo-release.rpm
     # yum -y install openstack-packstack
@@ -68,7 +68,7 @@ http://openstack.redhat.com/Quickstart
 [rdo-list]: http://www.redhat.com/mailman/listinfo/rdo-list
 [rdo-newsletter]: http://www.redhat.com/mailman/listinfo/rdo-newsletter
 [ask.openstack.org]: http://ask.openstack.org/
-[Events]: http://openstack.redhat.com/Events
+[Events]: http://rdoproject.org/events
 
 ---
 
