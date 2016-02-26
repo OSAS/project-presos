@@ -1,14 +1,12 @@
 # An Introduction to OpenStack
 
-## LinuxCon Dublin, 2015
-
 ## Rich Bowen - rbowen@redhat.com
 
 ---
 
 ![openstack](images/openstack.png)
 
-note: A Foundation, and a software project.
+note: A Foundation, a community, and a software project.
 
 ---
 
@@ -146,31 +144,80 @@ note: It's evolved
 
 ## Projects
 
-* Bare metal (Ironic)
-* Block Storage (Cinder)
-* Common Libraries (Oslo)
-* Compute (Nova)
-* DNS Services (Designate)
-* Dashboard (Horizon)
-* Data processing service (Sahara)
-* Database Service (Trove)
-* Deployment (TripleO)
-* Documentation (No Clever Name)
-* Identity (Keystone)
+<small>
+astara,
+barbican,
+Chef OpenStack,
+cinder,
+cloudkitty,
+Community App Catalog,
+congress,
+cue,
+designate,
+Documentation,
+dragonflow,
+ec2-api,
+freezer,
+fuel,
+**glance**,
+heat,
+**horizon**,
+I18n,
+Infrastructure,
+ironic,
+**keystone**,
+kolla,
+Kuryr,
+magnum,
+manila,
+mistral,
+monasca,
+murano,
+**neutron**,
+**nova**,
+OpenStack client,
+OpenStack UX,
+OpenStackAnsible,
+oslo,
+Packaging-deb,
+Packaging-rpm,
+Puppet OpenStack,
+Quality Assurance,
+rally,
+RefStack,
+Release Management,
+sahara,
+searchlight,
+Security,
+senlin,
+solum,
+Stable branch maintenance,
+**swift**,
+Telemetry,
+tripleo,
+trove,
+winstackers,
+zaqar
+</small>
 
 ---
 
-* Image Service (Glance)
-* Infrastructure (Infra)
-* Key management service (Barbican)
-* Message service (Zaqar, formerly Marconi)
-* Networking (Neutron)
-* Object Storage (Swift)
-* Orchestration (Heat)
-* Quality Assurance (QA)
-* Release cycle management 
-* Shared File Systems (Manila)
-* Telemetry (Ceilometer)
+# 53 of 'em
+
+http://git.openstack.org/cgit/openstack/governance/tree/reference/projects.yaml
+
+---
+
+## Required:
+
+**nova**,
+**keystone**,
+**horizon**,
+**neutron**,
+**glance**,
+**swift**
+
+The rest are optional, sort of.
 
 ---
 
@@ -181,9 +228,9 @@ note: It's evolved
 
 ## Big Tent
 
-* In the past - the Incubator
-* This definition was too small
-* This definition was too big
+* Does your project work towards the OpenStack Mission?
+
+> The OpenStack Mission: to produce the ubiquitous Open Source Cloud Computing platform that will meet the needs of public and private clouds regardless of size, by being simple to implement and massively scalable.
 
 Note:
 
@@ -200,16 +247,6 @@ of it
   solving in the cloud computing space
 * Too big for any one person ever to install the whole thing. Also,
   totally overwhelming to beginners
-
----
-
-## Big Tent
-
-* Does your project work towards the OpenStack Mission?
-
-> The OpenStack Mission: to produce the ubiquitous Open Source Cloud Computing platform that will meet the needs of public and private clouds regardless of size, by being simple to implement and massively scalable.
-
----
 
 ## Big Tent
 
@@ -276,6 +313,7 @@ etc, to keep up with what's happening.
 ## Submit to the TC
 
 * Must be willing to submit to the rulings of the Technical Committee
+* Elected by the community, from the community
 
 ---
 
@@ -431,6 +469,9 @@ Can then cut a release based on a particular answer or set of answers.
 
 ![security](images/firewall.png)
 
+Note: Neutron gives you a means to manage a "firewall as a service"
+configuration from the dashboard.
+
 ---
 
 ## Storage (block storage)
@@ -514,6 +555,13 @@ Designate provides DNSaaS services for OpenStack:
 
 note: Shared filesystem service for OpenStack. Provides coordinated access
 to shared or distributed file systems.
+
+---
+
+## Magnum
+
+> Makes container orchestration engines such as Docker and Kubernetes
+> available as first class resources in OpenStack.
 
 ---
 
