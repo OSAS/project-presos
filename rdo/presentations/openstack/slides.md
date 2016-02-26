@@ -625,9 +625,9 @@ note: Day job
 ## Alternatives
 
 * Crowbar (Dell)
+* TripleO
 * Fuel (Mirantis)
 * Helion (HP)
-* RDO-Manager
 
 note: In no particular order
 
@@ -637,7 +637,8 @@ note: In no particular order
 
 * Deployment is *hard*
 * This is one place where, for the moment, companies are competing
-* Hopefully soon TripleO will be the defacto solution
+* Hopefully soon TripleO will be the defacto solution, as it is 100%
+  upstream.
 * Local variants (Debian vs RHEL, for example) will still exist, based
   on TripleO
 * We'll start competing on something else, like management
@@ -677,13 +678,21 @@ note: StackOverflow-like community for OpenStack.
 
 ## OpenStack Summit
 
-Tokyo, Japan, October 27-30
+Austin, Texas, April 25-29
+
+Barcelona, Spain, October 24-28
 
 http://openstack.org/summit
 
 ![summit](images/summit.png)
 
-(Next year in Austin, Texas)
+---
+
+## OpenStack Summit
+
+* Half trade show, half developer summit
+* Celebrate the recent release, plan the next one
+* Considering splitting this into separate events in 2017
 
 ---
 
