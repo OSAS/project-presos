@@ -2,6 +2,8 @@
 
 ## Rich Bowen - rbowen@redhat.com
 
+OpenStack Community Liaison
+
 ---
 
 ![openstack](images/openstack.png)
@@ -560,8 +562,8 @@ to shared or distributed file systems.
 
 ## Magnum
 
-> Makes container orchestration engines such as Docker and Kubernetes
-> available as first class resources in OpenStack.
+Makes container orchestration engines such as Docker and Kubernetes
+available as first class resources in OpenStack.
 
 ---
 
@@ -676,6 +678,23 @@ note: StackOverflow-like community for OpenStack.
 
 ---
 
+## Get involved!
+
+* https://github.com/openstack
+* http://ask.openstack.org/
+* https://groups.openstack.org/
+* http://docs.openstack.org/
+
+---
+
+## Why?
+
+* Fix it for everyone
+* Showcase the cool things you're working on
+* It's better to share
+
+---
+
 ## OpenStack Summit
 
 Austin, Texas, April 25-29
@@ -693,6 +712,70 @@ http://openstack.org/summit
 * Half trade show, half developer summit
 * Celebrate the recent release, plan the next one
 * Considering splitting this into separate events in 2017
+
+---
+
+![redhat](images/redhat_tux.jpg)
+
+Which brings us to ...
+
+---
+
+## Why companies are involved
+
+* Customers want a solid cloud platform
+* None of us are big enough to develop what they want in a reasonable time.
+
+---
+
+## Red Hat
+
+![redhat](images/red_hat_logo.jpg)
+
+* Why does Red Hat (or, by extension, any company) care?
+    * Promote our customer's requirements
+    * Build expertise, so that we provide better support
+    * Strong upstream helps everyone
+    * Working on features that won't be in the product long-term is
+      actively harmful to customers
+
+Note: Rising tide, and all that
+
+Companies that simply consume the upstream don't end up with the
+expertise that we have.
+
+---
+
+### What we work on (at the moment)
+
+* Things our customers tell us they care about:
+    * easy and automatizable deployments
+    * life cycle and upgrade management, limiting down time
+    * optional intergrated operational tools
+    * high availability of the control plane
+    * optional high availability of VMs
+    * disaster recovery scenarios
+    * scalability & composability of deployments
+    * multi-site deployments
+    * performance improvements in networking, storage and compute
+
+![redhat](images/red_hat_logo.jpg)
+
+Note: We are, after all, a business
+
+---
+
+### How we work
+
+Upstream -> RDO -> RHOSP
+
+> which is like
+
+Kernel -> Fedora -> RHEL
+
+> which is pretty much how we do things at Red Hat.
+
+Note: Upstream First
 
 ---
 
